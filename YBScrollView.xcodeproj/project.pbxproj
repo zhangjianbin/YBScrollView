@@ -14,6 +14,7 @@
 		840BD7F31DD074AD00451916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840BD7F21DD074AD00451916 /* Assets.xcassets */; };
 		840BD7F61DD074AD00451916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840BD7F41DD074AD00451916 /* LaunchScreen.storyboard */; };
 		840BD8011DD074AD00451916 /* YBScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BD8001DD074AD00451916 /* YBScrollViewUITests.m */; };
+		840BD80D1DD075CB00451916 /* UIScrollView+Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BD80C1DD075CB00451916 /* UIScrollView+Direction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		840BD7FC1DD074AD00451916 /* YBScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840BD8001DD074AD00451916 /* YBScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBScrollViewUITests.m; sourceTree = "<group>"; };
 		840BD8021DD074AD00451916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840BD80B1DD075CB00451916 /* UIScrollView+Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Direction.h"; sourceTree = "<group>"; };
+		840BD80C1DD075CB00451916 /* UIScrollView+Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Direction.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				840BD7EA1DD074AD00451916 /* AppDelegate.m */,
 				840BD7EC1DD074AD00451916 /* ViewController.h */,
 				840BD7ED1DD074AD00451916 /* ViewController.m */,
+				840BD80B1DD075CB00451916 /* UIScrollView+Direction.h */,
+				840BD80C1DD075CB00451916 /* UIScrollView+Direction.m */,
 				840BD7EF1DD074AD00451916 /* Main.storyboard */,
 				840BD7F21DD074AD00451916 /* Assets.xcassets */,
 				840BD7F41DD074AD00451916 /* LaunchScreen.storyboard */,
@@ -216,6 +221,7 @@
 				840BD7EE1DD074AD00451916 /* ViewController.m in Sources */,
 				840BD7EB1DD074AD00451916 /* AppDelegate.m in Sources */,
 				840BD7E81DD074AD00451916 /* main.m in Sources */,
+				840BD80D1DD075CB00451916 /* UIScrollView+Direction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +408,7 @@
 				840BD8071DD074AD00451916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		840BD8081DD074AD00451916 /* Build configuration list for PBXNativeTarget "YBScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +417,7 @@
 				840BD80A1DD074AD00451916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

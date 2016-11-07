@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIScrollView+Direction.h"
 
-@interface ViewController ()
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+@interface ViewController ()<UIScrollViewDelegate>
 
 @end
 
@@ -17,11 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    scrollView.showsVerticalScrollIndicator = YES;
+    scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.backgroundColor = [UIColor redColor];
+    scrollView.delegate = self;
+    scrollView.enableDirection = YES;
+    scrollView.contentSize = CGSizeMake(kScreenWidth, kScreenHeight*2);
+    [self.view addSubview:scrollView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"=======%zd", scrollView.direction);
 }
 
 @end
